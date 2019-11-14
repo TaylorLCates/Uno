@@ -19,6 +19,14 @@ public class Card {
         return color;
     }
 
+    public boolean isAddressed() {
+        return isAddressed;
+    }
+
+    public void setAddressed(boolean addressed) {
+        isAddressed = addressed;
+    }
+
     @Override
     public String toString() {
         return "" + color.toString() + " " + face.toString();
