@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38af0e4f-ced4-4966-b2a9-8d78e59721c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/improving/IDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/improving/IGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Colors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Faces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/PlayerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/IPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeckTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeckTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HandTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Face.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/PlayerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DeckTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeckTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="38af0e4f-ced4-4966-b2a9-8d78e59721c9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
