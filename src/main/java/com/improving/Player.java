@@ -2,61 +2,65 @@ package com.improving;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+import java.util.Optional;
 import java.util.Random;
 
-public class Player implements PlayerInterface{
+public class Player implements IPlayer {
 
     private Random random = new Random();
-
     private List<Card> playerHand;
-
-    private Game game;
+    private IGame game;
     private int id;
+    Colors declaredColors;
 
 
-    Player(ArrayList<Card> playerHand, int id) {
+   public Player(ArrayList<Card> playerHand, int id) {
         this.playerHand = playerHand;
         this.id = id;
     }
 
 
-    public void takeTurn(Game game) {
+    public void takeTurn(IGame game) {
         boolean cardPlayed = false;
         for (Card card : playerHand) {
-            if (game.isValidPlay(card)) {
-                play(card);
+            if (game.isPlayable(card)) {
+                if (card.getColors().equals(Colors.WILD)) {
+                    if (playerHand.size() == 0) {
+                        declaredColors = Colors.RED;
+                    } else
+                        declaredColors = playerHand.get(0).getColors();
+                    System.out.println("The color is now " + declaredColors);
+                }
+                game.playCard(card, Optional.ofNullable(declaredColors));
                 System.out.println("Player " + id + " played " + card);
                 cardPlayed = true;
-                //game.currentTurn = game.currentTurn + game.turnDirection;
+                playerHand.remove(card);
                 break;
             }
         }
+
         if (!cardPlayed) {
             draw(game);
-            //game.currentTurn = game.currentTurn + game.turnDirection;
-            if (game.isValidPlay(playerHand.get(playerHand.size() - 1))) {
-                play(playerHand.get(playerHand.size() - 1));
-                System.out.println("Player " + id + " played card that was drawn");
+            var drawnCard = playerHand.get(playerHand.size() - 1);
+            if (game.isPlayable(drawnCard)) {
+                if (drawnCard.getColors().equals(Colors.WILD)) {
+                    if (playerHand.size() == 0) {
+                        declaredColors = Colors.RED;
+                    } else
+                        declaredColors = playerHand.get(0).getColors();
+                    System.out.println("The color is now " + declaredColors);
+                    game.playCard(drawnCard, Optional.ofNullable(declaredColors));
+                    System.out.println("Player " + id + " played card that was drawn");
+                }
             }
         }
     }
 
 
-    private void play(Card card) {
-        game.getDeck().getDiscardPile().add(card);
-        playerHand.remove(card);
-    }
-
-    public Card draw(Game game) {
+    public Card draw(IGame game) {
         this.game = game;
-        game.reshuffle();
-        var randomIndex = random.nextInt(game.getDeck().getDrawPile().size());
-        var card = game.getDeck().getDrawPile().get(randomIndex);
-        game.getDeck().getDrawPile().remove(randomIndex);
+        var card = game.draw();
         playerHand.add(card);
-        System.out.println("Player " + id + " drew " + card);
-        game.reshuffle();
         return card;
     }
 
@@ -70,6 +74,8 @@ public class Player implements PlayerInterface{
     public int handSize() {
         return playerHand.size();
     }
+
+
 
     int getId() {
         return id;

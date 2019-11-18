@@ -13,13 +13,13 @@ public class Deck {
     private final Random random = new Random();
 
     public Deck(){
-        Set<Face> wildFaces = new HashSet<>();
-        wildFaces.add(Face.WILD);
-        wildFaces.add(Face.DRAW_FOUR);
+        Set<Faces> wildFaces = new HashSet<>();
+        wildFaces.add(Faces.WILD);
+        wildFaces.add(Faces.DRAW_FOUR);
 
-        for (var color : Color.values()) {
-            for (var face : Face.values()) {
-                if (color != Color.WILD){
+        for (var color : Colors.values()) {
+            for (var face : Faces.values()) {
+                if (color != Colors.WILD){
                 if (wildFaces.contains(face)) {
                     System.out.print("");
                 } else for (int i = 0; i < 2; i++) {
@@ -29,8 +29,8 @@ public class Deck {
             }
         }
         for (int i = 0; i < 4; i++) {
-            drawPile.add(new Card(Face.DRAW_FOUR,Color.WILD));
-            drawPile.add(new Card(Face.WILD, Color.WILD));
+            drawPile.add(new Card(Faces.DRAW_FOUR, Colors.WILD));
+            drawPile.add(new Card(Faces.WILD, Colors.WILD));
         }
         Collections.shuffle(drawPile);
         //System.out.println(cards.toString());

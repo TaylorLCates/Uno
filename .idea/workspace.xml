@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38af0e4f-ced4-4966-b2a9-8d78e59721c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/improving/IDeck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/improving/IGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Colors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Faces.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/PlayerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeckTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeckTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HandTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Deck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Face.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/improving/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/improving/PlayerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DeckTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeckTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +47,9 @@
   </component>
   <component name="ProjectId" id="1TKy8HzaeKbtvbh326raQvseADa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -45,20 +68,10 @@
       <module name="Uno" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.improving.*" />
+          <option name="PATTERN" value="com.improving.Game" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeckTests.deck_Should_Be_112_Cards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Uno" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeckTests" />
-      <option name="METHOD_NAME" value="deck_Should_Be_112_Cards" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,12 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTests.take_Turn_Should_Play_Wild_Cards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Uno" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTests" />
+      <option name="METHOD_NAME" value="take_Turn_Should_Play_Wild_Cards" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameTest.Player_Should_Draw_Appropriate_Amount_Of_Cards_If_Draw_Card_Is_Played" />
-        <item itemvalue="JUnit.DeckTests.deck_Should_Be_112_Cards" />
         <item itemvalue="JUnit.PlayerTests.only_One_Card_Should_Be_Drawn_If_No_Playable_Card_In_Hand" />
+        <item itemvalue="JUnit.PlayerTests.take_Turn_Should_Play_Wild_Cards" />
         <item itemvalue="JUnit.PlayerTests.take_Turn_Should_Play_First_Available_Valid_Card" />
       </list>
     </recent_temporary>

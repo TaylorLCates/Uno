@@ -1,7 +1,4 @@
-import com.improving.Card;
-import com.improving.Color;
 import com.improving.Deck;
-import com.improving.Face;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

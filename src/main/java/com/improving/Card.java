@@ -2,21 +2,21 @@ package com.improving;
 
 public class Card {
 
-    private final Face face;
-    private final Color color;
+    private final Faces faces;
+    private final Colors colors;
     boolean isAddressed = true;
 
-    public Card(Face face, Color color) {
-        this.face = face;
-        this.color = color;
+    public Card(Faces faces, Colors colors) {
+        this.faces = faces;
+        this.colors = colors;
     }
 
-    public Face getFace() {
-        return face;
+    public Faces getFaces() {
+        return faces;
     }
 
-    public Color getColor() {
-        return color;
+    public Colors getColors() {
+        return colors;
     }
 
     public boolean isAddressed() {
@@ -29,6 +29,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "" + color.toString() + " " + face.toString();
+        return "" + colors.toString() + " " + faces.toString();
     }
 }

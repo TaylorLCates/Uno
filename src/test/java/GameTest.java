@@ -1,10 +1,12 @@
 //import com.improving.Card;
-//import com.improving.Color;
-//import com.improving.Deck;
-//import com.improving.Face;
-//import com.improving.Hand;
+//import com.improving.Colors;
+//import com.improving.Faces;
+//import com.improving.Game;
 //import com.improving.Player;
 //import org.junit.Test;
+//
+//import java.util.ArrayList;
+//import java.util.List;
 //
 //import static org.junit.Assert.assertEquals;
 //
@@ -13,15 +15,16 @@
 //    @Test
 //    public void Player_Should_Draw_Appropriate_Amount_Of_Cards_If_Draw_Card_Is_Played() {
 //        //arrange
-//        Deck deck = new Deck();
-//        Hand hand = new Hand(deck);
-//        Player player = new Player(hand);
+//        Game game = new Game(1);
+//        List<Card> hand = new ArrayList<>();
+//        Player player = new Player((ArrayList<Card>) hand, 1);
 //
 //        //act
-//        deck.getDiscardPile().add(new Card(Face.DRAW_FOUR, Color.WILD));
-//        player.takeTurn();
+//        game.getDeck().getDiscardPile().add(new Card(Faces.DRAW_FOUR, Colors.WILD));
+//        player.takeTurn(game);
+//
 //        //assert
-//        assertEquals(4, player.getHand().getPlayerHand().size());
+//        assertEquals(4, player.handSize());
 //
 //
 //    }

@@ -1,6 +1,6 @@
 package com.improving;
 
-public enum Face {
+public enum Faces {
     ZERO,
     ONE,
     TWO,
