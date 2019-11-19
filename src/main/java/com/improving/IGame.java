@@ -11,14 +11,12 @@ public interface IGame {
 
     Card draw();
 
-    List<Integer> getPlayerHandSizes();
+    List<IPlayerInfo> getPlayerHandSizes();
 
-    IPlayer getNextPlayer();
+    IPlayerInfo getNextPlayer();
 
-    IPlayer getPrevPlayer();
+    IPlayerInfo getPrevPlayer();
 
-    IPlayer getNextNextPlayer();
-
-
+    IPlayerInfo getNextNextPlayer();
 
 }

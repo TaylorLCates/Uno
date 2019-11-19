@@ -46,23 +46,38 @@ public class Game implements IGame {
     }
 
     @Override
-    public List<Integer> getPlayerHandSizes() {
+    public List<IPlayerInfo> getPlayerHandSizes() {
+        ArrayList<IPlayerInfo> playerHandSizes = new ArrayList<>();
+        for (IPlayer player : listOfPlayers) {
+            playerHandSizes.add((IPlayerInfo)player);
+        }
         return null;
     }
 
     @Override
-    public IPlayer getNextPlayer() {
-        return null;
+    public IPlayerInfo getNextPlayer() {
+        return (IPlayerInfo) listOfPlayers.get((currentTurn % listOfPlayers.size()) + turnDirection);
     }
 
     @Override
-    public IPlayer getPrevPlayer() {
-        return null;
+    public IPlayerInfo getPrevPlayer() {
+        IPlayerInfo prevPlayer = (IPlayerInfo) listOfPlayers.get((currentTurn % listOfPlayers.size()) - turnDirection);
+        return prevPlayer;
     }
 
     @Override
-    public IPlayer getNextNextPlayer() {
-        return null;
+    public IPlayerInfo getNextNextPlayer() {
+        IPlayerInfo nextNextPlayer = (IPlayerInfo) listOfPlayers.get(((currentTurn % listOfPlayers.size()) + turnDirection) + turnDirection);
+        return nextNextPlayer;
+    }
+
+
+    public ArrayList<IPlayerInfo> getPlayerInfo(){
+        ArrayList<IPlayerInfo> playerInfo = new ArrayList<>();
+        for (IPlayer player: listOfPlayers) {
+            playerInfo.add((IPlayerInfo) player);
+        }
+        return playerInfo;
     }
 
     public void reshuffle() {
@@ -129,9 +144,6 @@ public class Game implements IGame {
                 gameInProgress = false;
                 break;
             }
-
-            //currentTurn = currentTurn + turnDirection;
-            //turnCount++;
         }
     }
 
