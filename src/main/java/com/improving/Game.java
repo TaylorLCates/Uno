@@ -155,7 +155,7 @@ public class Game implements IGame {
     }
 
     public void performSpecialCard(Card card, Game game) {
-        if (currentTurn < 0) {
+        if (currentTurn < 6) {
             currentTurn = currentTurn + listOfPlayers.size();
         }
         int nextPlayer = (currentTurn + turnDirection) % listOfPlayers.size();
@@ -198,6 +198,9 @@ public class Game implements IGame {
         if (card.getFaces().equals(Faces.SKIP) && card.isAddressed) {
             card.isAddressed = false;
             currentTurn += turnDirection;
+        }
+        if (card.getFaces().equals(Faces.WILD) && (turnCount == 0)){
+            currentColor = Optional.of(Colors.RED);
         }
     }
 

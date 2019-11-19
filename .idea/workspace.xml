@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38af0e4f-ced4-4966-b2a9-8d78e59721c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/IPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/IPlayerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/IPlayerInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/improving/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
