@@ -1,6 +1,7 @@
 package com.improving;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -22,6 +23,8 @@ public class Player implements IPlayer {
 
     public void takeTurn(IGame game) {
         boolean cardPlayed = false;
+
+
         for (Card card : playerHand) {
             if (game.isPlayable(card)) {
                 if (card.getColors().equals(Colors.WILD)) {
@@ -73,6 +76,34 @@ public class Player implements IPlayer {
 
     public int handSize() {
         return playerHand.size();
+    }
+
+    Colors findBestColor() {
+
+        int blueCounter = 0;
+        int redCounter = 0;
+        int greenCounter = 0;
+        int yellowCounter = 0;
+        for (Card card : playerHand) {
+            if (card.getColors().equals(Colors.BLUE)) {
+                blueCounter++;
+            }
+            if (card.getColors().equals(Colors.RED)) {
+                redCounter++;
+            }
+            if (card.getColors().equals(Colors.GREEN)) {
+                greenCounter++;
+            }
+            if (card.getColors().equals(Colors.YELLOW)) {
+                yellowCounter++;
+            }
+        }
+
+        Integer.compare(blueCounter, redCounter)
+
+
+
+        return
     }
 
 

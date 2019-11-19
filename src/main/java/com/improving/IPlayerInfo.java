@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public interface IPlayerInfo {
 
-    public ArrayList<IPlayerInfo> getPlayerInfo();
+    int handSize();
 }
