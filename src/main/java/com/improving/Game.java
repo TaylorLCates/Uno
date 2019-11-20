@@ -137,7 +137,7 @@ public class Game implements IGame {
             ++turnCount;
 
             if (activeActualPlayer.handSize() == 1) {
-                System.out.println("Player " + activeActualPlayer.getId() + " shouts 'UNO!'");
+                //System.out.println("Player " + activeActualPlayer.getId() + " shouts 'UNO!'");
             }
             if (activeActualPlayer.handSize() == 0) {
                 System.out.println("Player " + activeActualPlayer.getId() + " has won the game!");
@@ -168,6 +168,7 @@ public class Game implements IGame {
                 listOfPlayers.get(nextPlayer - turnDirection).draw(game);
                 listOfPlayers.get(nextPlayer - turnDirection).draw(game);
                 card.isAddressed = false;
+                currentColor = Optional.of(Colors.RED);
                 currentTurn += turnDirection;
             }
             listOfPlayers.get(nextPlayer).draw(game);
